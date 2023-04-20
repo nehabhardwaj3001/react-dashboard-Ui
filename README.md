@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `Screenshots of the project`
 
+<img width="950" alt="image" src="https://user-images.githubusercontent.com/97179443/233292244-8e2d9464-61df-43f8-baa4-76fa8ac2cd00.png">
 
-image.png
 
-image.png
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/97179443/233292024-528bfe94-db9d-4836-be2b-3f1067d59882.png">
