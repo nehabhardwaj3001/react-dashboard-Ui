@@ -22,6 +22,20 @@ const ScaledImage = styled(Image)`
   }
 `;
 
+const AnimatedTitle = styled(Title)`
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: #7166f9;
+  }
+`;
+
+const AnimatedButton = styled(CustomButton)`
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: #7166f9;
+  }
+`;
+
 const DashboardHeader = () => {
   return (
     <>
@@ -43,16 +57,16 @@ const DashboardHeader = () => {
       <CustomDivider margin="5px 0 44px" />
       <TitleWrap>
         <RowAlignedContent>
-          <Title>Poroject statistic</Title>
-          <Image src="/img/doubt-icon.svg" preview={false} />
+          <AnimatedTitle>Poroject statistic</AnimatedTitle>
+          <ScaledImage src="/img/doubt-icon.svg" preview={false} />
         </RowAlignedContent>
         <ButtonsWrap>
-          <CustomButton type="primary" background="#7166f9" color="#F6F6FB">
+          <AnimatedButton type="primary" background="#7166f9" color="#F6F6FB">
             30 days
-          </CustomButton>
-          <CustomButton type="primary">90 days</CustomButton>
-          <CustomButton type="primary">6 months</CustomButton>
-          <CustomButton type="primary">12 months</CustomButton>
+          </AnimatedButton>
+          <AnimatedButton type="primary">90 days</AnimatedButton>
+          <AnimatedButton type="primary">6 months</AnimatedButton>
+          <AnimatedButton type="primary">12 months</AnimatedButton>
         </ButtonsWrap>
       </TitleWrap>
     </>
