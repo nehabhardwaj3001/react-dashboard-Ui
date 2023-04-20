@@ -1,0 +1,27 @@
+.dashboard-header-wrap:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .logo-title-wrap:hover {
+    color: #7166f9;
+  }
+  
+  .add-icon:hover {
+    opacity: 0.8;
+  }
+  
+  .user-info-wrap:hover {
+    color: #7166f9;
+  }
+  
+  .doubt-icon:hover {
+    opacity: 0.8;
+  }
+  
+  .buttons-wrap button:hover {
+    background-color: #7166f9;
+  }
+  
+
+  
