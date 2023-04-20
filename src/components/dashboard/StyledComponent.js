@@ -7,6 +7,11 @@ export const CustomMenu = styled(Menu)`
   .ant-menu-item {
     margin: 0;
   }
+  .ant-menu-item:hover {
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
   .ant-menu-item-selected {
     background: linear-gradient(
       270.27deg,
@@ -36,6 +41,12 @@ export const SidebarHeader = styled.div`
     background: linear-gradient(rgb(169, 201, 255) 0%, rgb(255, 187, 236) 100%);
     padding: 14px;
     border-radius: 50%;
+  }
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
 
@@ -93,6 +104,12 @@ export const LogoTitleWrap = styled.div`
     padding: 14px;
     background: #f6f6fb;
     border-radius: 12px;
+  }
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
 
@@ -165,7 +182,13 @@ export const CustomCard = styled(Card)(
     .ant-card-body {
       padding: ${padding || "30.76px 37.18px 40.68px 16px"};
     }
-
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    background: #ebebeb;
+  }
   `
 );
 
@@ -183,12 +206,25 @@ export const CardHeader = styled(RowAlignedContent)`
     line-height: 38px;
     color: #7166f9;
   }
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const TrafficSourceCard = styled(Card)`
   padding: 0;
-  background: #F6F6FB;
+  background: #f6f6fb;
   border-radius: 32px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    background: #ebebeb;
+  }
 `;
 
 export const SourceWrap = styled.div`
@@ -203,6 +239,12 @@ export const SourceWrap = styled.div`
     font-size: 12px;
     line-height: 32px;
     color: #000000;
+  }
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
 
@@ -238,6 +280,12 @@ export const CardUpperSection = styled.div(
       line-height: 14px;
       color: ${color || "#2B2F42"};
     }
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+    transform: scale(1.05);
+  }
   `
 );
 
@@ -256,5 +304,11 @@ export const CardLowerSection = styled.div(
       line-height: 16px;
       color: ${color || "#2B2F42"};
     }
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+    transform: scale(1.05);
+  }
   `
 );
