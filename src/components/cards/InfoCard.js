@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Typography, Col, Image } from "antd";
 import {
   CustomCard,
@@ -19,24 +19,9 @@ const InfoCard = ({
   background,
   color,
 }) => {
-  const [hovered, setHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setHovered(false);
-  };
-
   return (
     <Col span={12}>
-      <CustomCard
-        background={background}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        style={{ boxShadow: hovered ? "0 2px 8px rgba(0, 0, 0, 0.15)" : "none" }}
-      >
+      <CustomCard background={background}>
         <CardUpperSection color={color}>
           <Image src={image} preview={false} className="card-img" />
           <div>
